@@ -12,10 +12,9 @@ is the latest version of Python.
 
 Now you have installed Anaconda we can create an evironment to work in. Open your terminal (or 'Anaconda Prompt' on Windows) and type:
 
-``` $ conda create -c conda-forge -n python_workshop cis jupyter```
+    conda create -c conda-forge -n python_workshop cis jupyter
 
-Where we have created an environment called 'python_workshop', and installed a packaged called 'cis' (and all its dependencies) and a package
-called 'jupyter' from the 'conda-forge' channel.
+Where we have created an environment called `python_workshop`, and installed a packaged called `cis` (and all its dependencies) and a package called `jupyter` from the `conda-forge` channel.
 
 This may take a while as it installs all of the Python libraries and C libraries on which they depend, including NetCDF and HDF.
 
@@ -24,7 +23,7 @@ This may take a while as it installs all of the Python libraries and C libraries
 Many of our examples use realistic sample data, but unfortunately different packages use different datasets. To get the Iris sample data, 
 simply type:
 
-``` $ conda install -c scitools -n python_workshop iris_sample_data```
+    conda install -c scitools -n python_workshop iris_sample_data
 
 The CIS example data can be downloaded from Dropbox using this link: https://www.dropbox.com/s/6iqb6h84h6kwxk0/WorkshopData2016.zip?dl=0
 
