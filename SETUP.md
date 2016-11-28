@@ -3,6 +3,8 @@
 We will be using Anaconda to install and manage a Python 'environment' for us to work in. Rather than using any pre-installed Python 
 interpretors this has the advantage that it will not conflict with any existing libraries, and everyone will be using the same verisons.
 
+If you are able to, we strongly suggest you install Anaconda on, and download the example data to, the system you primarily work on – and then access that system through your laptop during the course. PyCharm should be installed on the laptop you bring with you.
+
 ## 1. Install Anaconda
 
 If you haven't already got Anaconda installed, download and install it from: https://www.continuum.io/downloads. Choose Python 3.5 as this 
