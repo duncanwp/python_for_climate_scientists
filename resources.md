@@ -1,6 +1,6 @@
 # Resources
 
-Extensive documentation is available through the core Python reference here: https://docs.python.org/3/
+Extensive documentation is available through the core Python reference here: https://docs.python.org/3/.
 
 ## Python libraries
 
@@ -25,16 +25,19 @@ These aren't covered in the course but are still very well regarded and may be u
  * [CIS](http://cistools.net) - For working with observational data and collocation with model data
  * [Iris](http://scitools.org.uk/iris/) - For working wiht model data
  * [Cartopy](http://scitools.org.uk/cartopy/) - For plotting geo-data
-
+ * [Shapely](https://pypi.python.org/pypi/Shapely) - For working with geometric objects (based on [geos](http://trac.osgeo.org/geos/))
+ 
 ### Optimization libraries
 
  * [numexpr] (https://github.com/pydata/numexpr) - Fast, multi-core array operations
  * [numba](http://numba.pydata.org) - Speeds up Python code by compiling it first
-
+ * [mpi4py](http://pythonhosted.org/mpi4py/) - MPI bindings in Python
+ 
 ## Other resources
 
  * [f2py](https://docs.scipy.org/doc/numpy-dev/f2py/) - Call compiled Fortran routines from Python
  * [recipy](https://github.com/recipy/recipy) - Keep track of all the inputs and outputs of your scripts
+ * [lmfit](http://lmfit.github.io/lmfit-py/index.html) - Advanced curve fitting routines
  
 ## Community pages / groups
 
