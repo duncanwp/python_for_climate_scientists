@@ -3,7 +3,7 @@
 We will be using Anaconda to install and manage a Python 'environment' for us to work in. Rather than using any pre-installed Python 
 interpretors this has the advantage that it will not conflict with any existing libraries, and everyone will be using the same verisons.
 
-If you are able to, we strongly suggest you install Anaconda on, and download the example data to, the system you primarily work on – and then access that system through your laptop during the course. PyCharm should be installed on the laptop you bring with you.
+For the course it will be easiest to work directly on your laptop - so please install these packages there. Python is cross-platform though so switching to work on remote servers later is straight forward.
 
 ## 1. Install Anaconda
 
@@ -14,7 +14,7 @@ is the latest version of Python.
 
 Now you have installed Anaconda we can create an evironment to work in. Open your terminal (or 'Anaconda Prompt' on Windows) and type:
 
-    conda create -c conda-forge -n python_workshop cis jupyter
+    conda create -c conda-forge -n python_workshop cis jupyter pytest
 
 Where we have created an environment called `python_workshop`, and installed a packaged called `cis` (and all its dependencies) and a package called `jupyter` from the `conda-forge` channel.
 
