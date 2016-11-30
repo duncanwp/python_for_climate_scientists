@@ -32,6 +32,7 @@ These aren't covered in the course but are still very well regarded and may be u
 ### Optimization libraries
 
  * [numexpr] (https://github.com/pydata/numexpr) - Fast, multi-core array operations
+ * [cython](http://cython.org) - Easily write C extensions for Python
  * [numba](http://numba.pydata.org) - Speeds up Python code by compiling it first
  * [mpi4py](http://pythonhosted.org/mpi4py/) - MPI bindings in Python
  
