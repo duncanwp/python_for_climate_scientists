@@ -57,7 +57,7 @@ https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/
 
 ### F2Py
 0.5 hour
-https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/f2py_example.ipynb?create=1
+https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/f2py-example/f2py_example.ipynb?create=1
 
 ### Pandas
 1 hour — depends on "An introduction to CIS" 
