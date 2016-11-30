@@ -2,6 +2,8 @@
 
 Extensive documentation is available through the core Python reference here: https://docs.python.org/3/.
 
+Raymond Pierrehumbert also has a webpage dedicated to learning Python with many useful links and tutorials here: https://users.physics.ox.ac.uk/~pierrehumbert/PrinciplesPlanetaryClimate/Python/pythonLearning.html
+
 ## Python libraries
 
 ### General libraries
@@ -33,7 +35,7 @@ These aren't covered in the course but are still very well regarded and may be u
  * [numba](http://numba.pydata.org) - Speeds up Python code by compiling it first
  * [mpi4py](http://pythonhosted.org/mpi4py/) - MPI bindings in Python
  
-## Other resources
+### Other libraries
 
  * [f2py](https://docs.scipy.org/doc/numpy-dev/f2py/) - Call compiled Fortran routines from Python
  * [recipy](https://github.com/recipy/recipy) - Keep track of all the inputs and outputs of your scripts
