@@ -16,7 +16,7 @@ Now you have installed Anaconda we can create an evironment to work in. Open you
 
     conda create -c conda-forge -n python_workshop cis jupyter pytest
 
-Where we have created an environment called `python_workshop`, and installed a packaged called `cis` (and all its dependencies) and a package called `jupyter` from the `conda-forge` channel.
+Where we have created an environment called `python_workshop`, and installed packages called `cis` (and all its dependencies), `jupyter` and `pytest` from the `conda-forge` channel.
 
 This may take a while as it installs all of the Python libraries and C libraries on which they depend, including NetCDF and HDF.
 
