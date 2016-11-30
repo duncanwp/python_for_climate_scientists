@@ -4,6 +4,8 @@ Extensive documentation is available through the core Python reference here: htt
 
 Raymond Pierrehumbert also has a webpage dedicated to learning Python with many useful links and tutorials here: https://users.physics.ox.ac.uk/~pierrehumbert/PrinciplesPlanetaryClimate/Python/pythonLearning.html
 
+The freely available Dive Into Python 3 book is a good resource for learning the Python language: http://www.diveintopython3.net/
+
 ## Python libraries
 
 ### General libraries
