@@ -1,5 +1,7 @@
 # Project-specific stuff
 course_content/resources/WorkshopData2016
+*.pptx
+*.docx
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
