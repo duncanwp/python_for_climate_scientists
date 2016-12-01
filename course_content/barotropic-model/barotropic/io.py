@@ -104,17 +104,6 @@ class NetCDFWriter(object):
                             'units': 's-1',
                             'grid_mapping': 'latitude_longitude'})
 
-    def __del__(self):
-        """
-        When the object is deleted we want to make sure any data waiting
-        to be written is flushed to the underlying netcdf file and that
-        the file is closed
-
-        """
-        if hasattr(self, 'ds'):
-            self.flush()
-            self.close()
-
     def save(self):
         """Save the current model state to the output netCDF file."""
         if not self.ds.isopen():
