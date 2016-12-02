@@ -11,27 +11,30 @@ files = ["../resources/WorkshopData2016/AerosolCCI/20080411002335-ESACCI-L2P_AER
 def subset_africa(ungridded_data):
     northern_africa_lat_bounds = -20, 50
     northern_africa_lon_bounds = 0, 40
-    southern_africa_lat_bounds = 10, 50
-    southern_africa_lon_bounds = -40, 0
-    africa_points = np.zeros_like(ungridded_data.data)
+    southern_africa_lat_bounds = -40, 0
+    southern_africa_lon_bounds = 10, 50
+    africa_points = np.zeros(ungridded_data.shape, dtype=np.bool)
     for i, d in enumerate(ungridded_data.data):
-        if ((northern_africa_lat_bounds[0] < ungridded_data.lat[i] < northern_africa_lat_bounds[1]) and
-            (northern_africa_lon_bounds[0] < ungridded_data.lon[i] < northern_africa_lon_bounds[1])) or \
-            ((southern_africa_lat_bounds[0] < ungridded_data.lat[i] < southern_africa_lat_bounds[1]) and
-             (southern_africa_lon_bounds[0] < ungridded_data.lon[i] < southern_africa_lon_bounds[1])):
-            africa_points[i] = 1
+        if ((northern_africa_lat_bounds[0] < ungridded_data.lat.points[i] < northern_africa_lat_bounds[1]) and
+            (northern_africa_lon_bounds[0] < ungridded_data.lon.points[i] < northern_africa_lon_bounds[1])) or \
+            ((southern_africa_lat_bounds[0] < ungridded_data.lat.points[i] < southern_africa_lat_bounds[1]) and
+             (southern_africa_lon_bounds[0] < ungridded_data.lon.points[i] < southern_africa_lon_bounds[1])):
+            africa_points[i] = True
     return ungridded_data[africa_points]
 
 
 def subset_aerosol_cci_over_africa():
-    from cis.data_io.ungridded_data import UngriddedDataList
-    subsetted_data = UngriddedDataList()
+    from utils import stack_data_list
+    subsetted_data = []
     for f in files:
         d = cis.read_data(f, "AOD550")
         subsetted_data.append(subset_africa(d))
-    return subsetted_data
+    subset = stack_data_list(subsetted_data)
+    return subset
 
 
 if __name__ == '__main__':
+    import matplotlib.pyplot as plt
     subset = subset_aerosol_cci_over_africa()
-    subset.plot()
+    subset.plot(xaxis='longitude', yaxis='latitude')
+    plt.show()
