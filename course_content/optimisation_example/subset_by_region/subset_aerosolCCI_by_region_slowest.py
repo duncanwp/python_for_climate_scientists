@@ -24,7 +24,7 @@ def subset_africa(ungridded_data):
 
 
 def subset_aerosol_cci_over_africa():
-    from utils import stack_data_list
+    from subset_by_region.utils import stack_data_list
     subsetted_data = []
     for f in files:
         d = cis.read_data(f, "AOD550")
