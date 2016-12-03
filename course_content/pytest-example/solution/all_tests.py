@@ -6,7 +6,7 @@ be presented in.
 #2 generates a failure, it will be replaced with #3 (fails)
 #3 replaces #2 (passes)
 #4 is added to cover the specified axis case (passes)
-#5 demonstrates a problem with masked arrays (fails)
+#5 demonstrates a problem with masked arrays (fails) [optional]
 
 """
 
@@ -44,7 +44,7 @@ def test_specified_axis():
     assert (cyclic_data[:-1] == data).all()
 
 
-# 5
+# 5 (optional, if there is time left)
 def test_masked_input():
     data = ma.array([0, 1, 999, 3, 4], mask=[0, 0, 1, 0, 0], dtype=np.int)
     cyclic_data = add_cyclic_point(data)

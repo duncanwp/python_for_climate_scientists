@@ -1,4 +1,4 @@
-"""Adding a cyclic points to arrays."""
+"""Adding cyclic points to arrays."""
 import numpy as np
 
 
