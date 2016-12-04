@@ -13,24 +13,25 @@ def subset_africa(ungridded_data):
     northern_africa_lon_bounds = 0, 40
     southern_africa_lat_bounds = -40, 0
     southern_africa_lon_bounds = 10, 50
-    africa_points = np.zeros(ungridded_data.shape, dtype=np.bool)
     lats = ungridded_data.lat.points
     lons = ungridded_data.lon.points
-    for i, d in enumerate(ungridded_data.data):
-        if ((northern_africa_lat_bounds[0] < lats[i] < northern_africa_lat_bounds[1]) and
-            (northern_africa_lon_bounds[0] < lons[i] < northern_africa_lon_bounds[1])) or \
-            ((southern_africa_lat_bounds[0] < lats[i] < southern_africa_lat_bounds[1]) and
-             (southern_africa_lon_bounds[0] < lons[i] < southern_africa_lon_bounds[1])):
-            africa_points[i] = True
+    africa_points = ((northern_africa_lat_bounds[0] < lats) & (lats < northern_africa_lat_bounds[1]) &
+                     (northern_africa_lon_bounds[0] < lons) & (lons < northern_africa_lon_bounds[1])) | \
+                    ((southern_africa_lat_bounds[0] < lats) & (lats < southern_africa_lat_bounds[1]) &
+                     (southern_africa_lon_bounds[0] < lons) & (lons < southern_africa_lon_bounds[1]))
     return ungridded_data[africa_points]
+
+
+def read_and_subset_data(filename):
+    d = cis.read_data(filename, "AOD550")
+    return subset_africa(d)
 
 
 def subset_aerosol_cci_over_africa():
     from subset_by_region.utils import stack_data_list
-    subsetted_data = []
-    for f in files:
-        d = cis.read_data(f, "AOD550")
-        subsetted_data.append(subset_africa(d))
+    import multiprocessing
+    pool = multiprocessing.Pool()
+    subsetted_data = pool.map(read_and_subset_data, files)
     subset = stack_data_list(subsetted_data)
     return subset
 
