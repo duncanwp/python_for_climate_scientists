@@ -2,7 +2,7 @@
 #
 # We recommend using the conda-forge channel when creating the environment:
 #
-#   conda create -n barotropic -c conda-forge -c ioam --file conda-requirements.txt
+#   conda create -n barotropic -c conda-forge --file conda-requirements.txt
 #
 
 # Core dependencies for the model:
@@ -13,4 +13,4 @@ pyspharm >= 1.0.8
 # Extra dependencies for running the example notebook:
 ipython-notebook
 iris
-geoviews
+cube_browser
