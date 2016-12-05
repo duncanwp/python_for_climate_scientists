@@ -14,18 +14,15 @@ is the latest version of Python.
 
 Now you have installed Anaconda we can create an evironment to work in. Open your terminal (or 'Anaconda Prompt' on Windows) and type:
 
-    conda create -c conda-forge -n python_workshop cis jupyter pytest
+    conda create -c conda-forge -n python_workshop cis jupyter pytest iris-sample-data
 
-Where we have created an environment called `python_workshop`, and installed packages called `cis` (and all its dependencies), `jupyter` and `pytest` from the `conda-forge` channel.
+Where we have created an environment called `python_workshop`, and installed packages called `cis` (and all its dependencies), `jupyter`, `iris-sample-data` and `pytest` from the `conda-forge` channel.
 
 This may take a while as it installs all of the Python libraries and C libraries on which they depend, including NetCDF and HDF.
 
 ## 3. Download sample data
 
-Many of our examples use realistic sample data, but unfortunately different packages use different datasets. To get the Iris sample data, 
-simply type:
-
-    conda install -c scitools -n python_workshop iris_sample_data
+Many of our examples use realistic sample data, but different packages use different datasets. The Iris sample data should aready have been downloaded as part of the `iris-sample-data` package installed in the previous step.
 
 The CIS example data can be downloaded from Dropbox using this link: https://www.dropbox.com/s/6iqb6h84h6kwxk0/WorkshopData2016.zip?dl=0
 
