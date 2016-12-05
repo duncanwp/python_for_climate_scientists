@@ -20,7 +20,7 @@ The example notebook requires in addition:
 
 * ipython-notebook (jupyter)
 * iris
-* geoviews
+* cube_browser
 
 
 ## Using the model
