@@ -14,51 +14,56 @@ The course itself is split into three days:
 
 ### Python 101
 2 hours
-https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/python_introduction.ipynb?create=1
+[notebook](https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/python_introduction.ipynb?create=1)
 
 ### An introduction to numpy
 2 hours &mdash; depends on a basic Python background
-https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/numpy_intro.ipynb?create=1
+[notebook](https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/numpy_intro.ipynb?create=1)
 
 ### An introduction to matplotlib
 1.5 hours &mdash; depends on "An introduction to numpy"
-https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/matplotlib_intro.ipynb?create=1
+[notebook](https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/matplotlib_intro.ipynb?create=1)
 
 ### Cartopy in a nutshell (for Iris)
 1 hour &mdash; depends on "An introduction to matplotlib"
-https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/cartopy_intro.ipynb?create=1
+[notebook](https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/cartopy_intro.ipynb?create=1)
 
 ## Day 2
 
 ### An introduction to Iris
 3 hours &mdash; depends on "An introduction to numpy"
-https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/iris_short_intro.ipynb?create=1
+[notebook](https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/iris_short_intro.ipynb?create=1)
 
 ### An introduction to CIS
 3 hours &mdash; depends on "An introduction to Iris" and "An introduction to matplotlib"
-https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/cis_introduction.ipynb?create=1
+[notebook](https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/cis_introduction.ipynb?create=1)
 
 
 ## Day 3
 
-### An introduction to PyCharm
-1 hour
-
-### Basic testing
-0.5 hour
+### Optimisation and an introduction to PyCharm
+1.5 hour
+[notebook](https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/optimisation.ipynb?create=1)
 
 ### An introduction to Object Oriented concepts
 0.5 hour
-https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/object_oriented_programming.ipynb?create=1
+[notebook](https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/object_oriented_programming.ipynb?create=1)
 
-### Optimisation
+### Examples of object-oriented programs
 1 hour
-https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/optimisation.ipynb?create=1
+[barotropic model](https://github.com/duncanwp/python_for_climate_scientists/tree/master/course_content/barotropic-model)
+
+### Exception handling
+0.25 hour
+[notebook](https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/exception_handling.ipynb?create=1)
+
+### Basic testing
+0.5 hour [materials](https://github.com/duncanwp/python_for_climate_scientists/tree/master/course_content/pytest-example)
 
 ### F2Py
-0.5 hour
-https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/f2py-example/f2py_example.ipynb?create=1
+0.75 hour
+[notebook](https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/f2py-example/f2py_example.ipynb?create=1)
 
 ### Pandas
-1 hour — depends on "An introduction to CIS" 
-https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/pandas_introduction.ipynb?create=1
+0.5 hour — depends on "An introduction to CIS"
+[notebook](https://nbviewer.jupyter.org/github/duncanwp/python_for_climate_scientists/blob/master/course_content/notebooks/pandas_introduction.ipynb?create=1)
